@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Frontend Dev - Njeri Cooper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/media/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Add your introduction here.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div id="project-list">
-                <!-- Project items will be added dynamically using JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
+    <div class="OgCoop" role="heading">
+        <div class="intro">
+            <img class="headshot" src="assets/my-pic.jpeg"
+                alt="Image of Njeri Cooper" loading="loading">
+            <h1>Novry</h1>
+            <h2>Software Engineer</h2>
+        </div>
+    </div>
+    <section class="main" role="main">
+        <h3 class="greetings">Hey 👋🏽</h3>
+        <p>My name is Novry. I'm a software engineer with 3+ years experience</p>
+        <div class="contact-container">
+            <a href="https://github.com/novrymahdevika1998" class="github tab">
+                <span class="fab fa-github link-logo" aria-hidden="true"></span>
+            </a>
+            <a href="https://medium.com/@novrymah" class="medium tab">
+                <span class="fab fa-medium link-logo" aria-hidden="true"></span>
+            </a>
+            <a href="https://x.com/nvrymh" class="twitter tab">
+                <span class="fab fa-twitter link-logo" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        &copy; Novry
+        <br>
+        <span id="footerText"> </span>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("footerText").innerHTML = year;
+        </script>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/6.2.4/firebase-app.js"></script>
 
-    <script src="script.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 </body>
-</html>
 
+</html>

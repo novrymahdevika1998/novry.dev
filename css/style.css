@@ -1,41 +1,178 @@
-* {
-    box-sizing: border-box;
-}
-
+html,
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤘</text></svg>") 16 0, auto;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.OgCoop {
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.8)), url("https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29") no-repeat;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    margin: 0;
 }
 
-main {
-    padding: 20px;
+.intro {
+    padding-top: 2%;
+    display: grid;
+    margin: 0 auto;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
-h1, h2 {
-    margin-top: 0;
+.headshot {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
 }
 
-#project-list {
-    display: flex;
-    flex-wrap: wrap;
+p {
+    padding: 0 15%;
 }
 
-.project {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    width: calc(33.33% - 20px);
+.link-logo {
+    max-width: 4rem;
+    max-height: 4rem;
+    font-size: 4rem;
 }
 
-footer {
+.main {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fffff2;
+    color: #191434;
     text-align: center;
+    kerning: 1em;
+    line-height: 1.7em;
 }
 
+.greetings {
+    text-align: center;
+    padding: 25px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: #222491;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto auto auto;
+    grid-template-areas: "github medium twitter";
+    padding: 0;
+    height: 400px;
+}
+
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-bottom: 2%;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0, auto;
+}
+
+.tab {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.github {
+    background-color: #77041d;
+    grid-area: github;
+}
+
+.github:hover {
+    background-color: #3E6897;
+}
+
+/* .codepen {
+    background-color: #A5257A;
+    grid-area: codepen;
+}
+
+.codepen a {
+    color: #FAC7F8;
+} */
+
+/* .codepen:hover {
+    background-color: #0E6F73;
+} */
+
+.medium {
+    background-color: #FA58FA;
+    grid-area: medium;
+}
+
+.medium:hover {
+    background-color: #32C7B0;
+}
+
+.twitter {
+    background-color: #FAC7F8;
+    grid-area: twitter;
+}
+
+.twitter:hover {
+    background-color: #29EBF2;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    background: #222491;
+    color: #FAC7F8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    font-size: 1rem;
+    width: 100%;
+    z-index: 4;
+    align-items: center;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .intro {
+        padding-top: 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "github" "medium twitter";
+    }
+
+    .devto,
+    .twitter {
+        padding-bottom: 15%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
