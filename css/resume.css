@@ -1,0 +1,102 @@
+@import url("./theme.css");
+
+.top {
+    display: flex;
+    flex-flow: column;
+    margin: 2em 0 1.2em 0;
+    align-items: baseline;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.top-row{
+    display: flex;
+    flex-flow: row nowrap; 
+}
+
+.job{
+    margin: .5erm;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.qr {
+    display: none;
+    
+}
+
+.icon1{
+    display: flex;
+    align-self: baseline;
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+.app-body {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.txt {
+    font-size: .8em;
+    line-height: 1.8em;
+}
+
+.contact{ 
+    font-size: 1.8rem;
+}
+
+.description {
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-hdr {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size:2rem ;
+}
+
+.--tech, .--lang, .--other, .--cloud-computing {
+    padding: 0;
+    margin: 0;
+
+}
+
+.ul {
+    padding-right: 0;
+    padding-inline-start: 1rem;
+}
+
+.tools {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-container {
+    padding: 0;
+    padding-inline-start: 1.8rem;
+    margin: .25em;
+}
+
+.contact > a {
+    color: #191434;
+    white-space: nowrap;
+}
+
+@media only screen and (min-device-width: 1281px) 
+{
+    .qr {
+        display: flex;
+        height: 4em;
+        width: auto;
+        align-self: center;
+    }
+  }

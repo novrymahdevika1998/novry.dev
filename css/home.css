@@ -1,0 +1,119 @@
+.header-background {
+    background: 
+      linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+      ), url(https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29) no-repeat;
+      min-height: 400px;
+  }
+  
+  /*.menu-item a:hover {
+    color: #FAC7F8;
+  }*/
+  
+  .headshot {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+  }
+  
+  .main-text {
+    padding-bottom: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    padding: 1em 0em;
+    margin: 0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: #222491;
+  }
+  
+  .tab-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: auto auto auto auto;
+    grid-template-areas: "github codepen devto twitter";
+    padding: 0;
+    height: 30rem;
+  }
+  
+  .tab {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .link-logo {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+  
+  .github {
+    background-color: #77041d; 
+    grid-area: github;
+  }
+  
+  .github:hover {
+    background-color: #4f73bf;
+  }
+  
+  .codepen {
+    background-color: #A5257A;
+    grid-area: codepen;
+  }
+  
+  .codepen a {
+    color: #FAC7F8; 
+  }
+  
+  .codepen-in-focus:hover {
+    background-color: #1e3072;
+  }
+  
+  .devto {
+    background-color: #FA58FA;
+    grid-area: devto;
+  }
+  
+  .devto:hover {
+    background-color: #5092ce;
+  }
+  
+  .twitter {
+    background-color: #FAC7F8;
+    grid-area: twitter;
+  }
+  
+  .twitter:hover{
+    background-color:#b4eff4;
+  }
+  
+  @media only screen and (max-width: 414px) {
+  
+    .header-content{
+      padding-top: 5%;
+    }
+  
+    .tab-container{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "github codepen" "devto twitter";
+      height: 20rem;
+    }
+  
+    .link-logo {
+      max-width: 4rem;
+      max-height: 4rem;
+    }
+  
+    .github, .codepen {
+      height: 100%;
+    }
+  }
+  

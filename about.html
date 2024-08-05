@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About | Novry</title>
+</head>
+
+<body>
+    <div class="theme-header header-background" role="heading">
+        <div class="header-content">
+            <nav>
+                <ul class="nav-items">
+                    <li class="menu-item"><a href="index.html">home</a></li>
+                    <li class="menu-item"><a href="portfolio.html">portfolio</a></li>
+                </ul>
+            </nav>
+            <h1 class="heading">About Novry</h1>
+        </div>
+    </div>
+    <section class="main">
+        <div class="content">
+            <img class="pic" src="/assets/About.jpeg" alt="Novry" id="me">
+            <div class="main-text context">
+                <p>
+                    Hi, I'm Novry. I'm a software engineer with 3+ years of experience in the software industry. My
+                    focus area for the past few years has been front-end development with React. I am also skilled in
+                    back-end development with Node.js and have experience using TypeScript in that context as well.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        &copy; Novry
+        <br>
+        <span id="footerText"> </span>
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("footerText").innerHTML = year;
+        </script>
+</body>
+
+</html>
